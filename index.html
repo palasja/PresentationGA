@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/sky.css" />
+    <link rel="stylesheet" href="dist/ga.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1 class="title">Google Analitics</h1>
+          <h3>Yakubenka Ivan</h3>
+        </section>
+        <section>
+          <h4>Introduction to Google Analytics</h4>
+          <img src="assets/home.png" alt="home page" />
+          <p>
+            Google Analytics is an analytics service that enables you to measure
+            traffic across your websites and apps.
+          </p>
+        </section>
+        <section>
+          <section><h4>History</h4></section>
+
+          <section>
+            Google analytycs grow up from Urchin Software Corporation which was
+            a web-analytycs company. The founders of the company were Paul
+            Muret, Jack Ancone, Brett Crosby. In April 2005 company was boutght
+            Google and products change name to «Urchin from Google» , and then
+            just Google Analytics.
+          </section>
+          <section>
+            Two version GA are working today:
+            <ul>
+              <li>
+                Google Analytycs 3 (Universal Analytics). Support will be
+                stopped July 1, 2023
+              </li>
+              <li>Google Analytycs 4</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>Sales pipline AIDA (AIDAS)</h4>
+            <img src="assets/sales-funnel-aida.png" alt="sales pipiline" />
+          </section>
+          <section>
+            Classic sales
+            <ul>
+              <li>Attention - client know about product</li>
+              <li>Interest - client is interested in product</li>
+              <li>Desire - client wish buy product</li>
+              <li>Action - client buy product</li>
+            </ul>
+            <p>Recently pipline has one more level</p>
+            <ul>
+              <li>Satisfaction - client satistaction product</li>
+            </ul>
+          </section>
+          <section>
+            Web site
+
+            <ul>
+              <li>Attention - how many people come to site</li>
+              <li>Interest - How much time he watch main page</li>
+              <li>Desire - How many of them click on title news</li>
+              <li>Action - How long he read news and see advertising</li>
+              <li>Satisfaction - Visitor back to site again</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>Reports</h4>
+          </section>
+          <section>
+            <h5>Common report</h5>
+            <img src="assets/ga-report-users.png" alt="report users" />
+          </section>
+          <section>
+            <h5>Views by page</h5>
+            <img src="assets/ga-report-pages.png" alt="report pages" />
+          </section>
+          <section>
+            <h5>Users last 30 minutes</h5>
+            <img src="assets/ga-report-last-30.png" alt="report 30 minutes" />
+          </section>
+          <section>
+            <h5>Events</h5>
+            <img src="assets/ga-report-events.png" alt="report events" />
+          </section>
+          <section>
+            <h5>Users by country</h5>
+            <img src="assets/ga-report-country.png" alt="report country" />
+          </section>
+        </section>
+        <section>
+          <section><h4>Use Google Analytics</h4></section>
+          <section>
+            <ul>
+              <li>Create Google account</li>
+              <li>
+                Authorization in
+                <a href="https://analytics.google.com/">analytyc service </a>
+              </li>
+              <li>Add acount in service</li>
+              <li>Add resource (url your site)</li>
+              <li>Add code to pages</li>
+            </ul>
+            <p>
+              If site created on a website builder or CMS, google analytics will
+              install accorting his instruction
+            </p>
+          </section>
+          <section>
+            <h4>Code example</h4>
+            <pre>
+				<code>
+					<!-- Google tag (gtag.js) -->
+					<script async src="https://www.googletagmanager.com/gtag/js?id=G-PS165412"></script>
+					<script>
+ 						 window.dataLayer = window.dataLayer || [];
+  						function gtag(){dataLayer.push(arguments);}
+  						gtag('js', new Date());
+						  gtag('config', 'G-PS165412');
+					</script> 
+				</code>
+			</pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>Google Analytics hierarchy</h4>
+            <p>Google Analytics is organized in a hierarchy which is made of</p>
+            <ul>
+              <li>Organization (optional)</li>
+              <li>Analytics account</li>
+              <li>Analytics property</li>
+              <li>Data streams (Google Analytics 4 properties)</li>
+            </ul>
+          </section>
+          <section>
+            <h5>Organization (optional)</h5>
+            <p>
+              Products and users are collected together in organizations. An
+              organization represents a company, and lets you access your
+              company’s product accounts
+            </p>
+          </section>
+          <section>
+            <h5>Analytics account</h5>
+            The account is the gateway to Analytics, and provides the container
+            for your Analytics properties. You can have one or more Analytics
+            accounts (up to a maximum of 100). Each account can contain up to
+            100 properties.
+          </section>
+          <section>
+            <h5>Analytics property</h5>
+            That Properties are the containers for your reports based on the
+            data you collect from your apps and sites. You can create up to 100
+            properties in an account.
+          </section>
+          <section>
+            <h5>Data streams</h5>
+            Each Google Analytics 4 property can have up to 50 data streams. A
+            data stream is a flow of data from a customer touchpoint (e.g., app,
+            website) to Analytics. When you create a data stream, Analytics
+            generates a snippet of code that you add to your app or site to
+            collect that data. Data is collected from the time you add the code,
+            and that data forms the basis of your reports.
+          </section>
+          <section>
+            All this things created and configured in you google analytics
+            account.
+            <img src="assets/ga-settings.png" alt="settings" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h4>Evetnts</h4>
+          </section>
+          <section>
+            Evetnts - that what measure user interactions on a website or app.
+            Most of the events that users trigger on your website or app are not
+            sent one at a time. Instead, most events are grouped together (or
+            batched).
+          </section>
+          <section>
+            <h4>Types of events</h4>
+            <ul>
+              <li>Automatically collected events</li>
+              <li>Enhanced measurement events</li>
+              <li>Recommended events</li>
+              <li>Custom events</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h4>Reason for use</h4>
+          <ul>
+            <li>Free</li>
+            <li>Automatic collection of data</li>
+            <li>You can create customization reports</li>
+            <li>Easy integration with other tools and platforms</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h2>Thank you</h2>
+            <h5>RS SCHOOL 2022Q1</h5>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
